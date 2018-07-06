@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i')
+@import "variables"
+@import "recent-contributions"
+@import "form"
+
+html,body
+  font-family: 'Roboto', sans-serif
+.header
+  background-image: linear-gradient(to bottom, #b6e3fd, #ffffff)
+  margin-bottom: 50px
+.heading
+  text-shadow: 2px 2px 2px #67656b, 3px 3px 2px $bastille
+
+.logo-img
+  margin: 20px auto
+  width: 150px
+  height: 150px
+.header-heading
+  margin-top: 20px
+  font-size: 7rem
+
+.main-description-wrapper
+  p
+    text-shadow: 0 0 3px #bfedfd
+  .main-heading
+    margin: 0 0 20px
+    color: $kashmir-blue
+    font-size: 2.2rem
+    text-shadow: 1px 1px 0 $kashmir-blue
+
+.counter-wrapper
+  width: 450px
+  .counter
+    background-image: linear-gradient(to top, $seagull, #ffffff)
+    box-shadow: 1px -1px 5px 0 #aaaaaa
+    border-radius: 10px
+    .text-counter
+      font-size: 3.5rem
+      color: #f2f2f2
+      padding: 20px 0
+      text-shadow: 1px 1px 7px #1d89f3
+  .btn-charity
+    padding: 20px 40px
+    margin: 20px auto 50px
+    border: none
+    background: #4169E1
+    box-shadow: inset 0 0 40px 0 #151345
+    text-shadow: 2px 2px 0 #2d2d2d
+    letter-spacing: 0.3rem
+    &:hover
+      background: #3334db
+
+.link-last-charity
+  width: 100%
+  padding: 20px 0
+  color: #2f30cc
+  letter-spacing: 0.2rem
+  font-weight: 500
+  background-image: linear-gradient(#ececec, #ffffff, #f5f5f5)
+  &:hover
+    text-decoration: none
+    color: #514cff
+
+.carousel-wrapper
+  width: 1100px
+  margin: 50px auto
+  .carousel-inner
+    border: 20px solid $orange
+    border-radius: 3px
+    height: 550px
+
+.description-project-wrapper
+  background-image: linear-gradient(lightblue, #e5eaff)
+
+.project-promotion-list
+  width: 80%
+  margin: auto
+  list-style: none
+  padding: 0
+  li
+    padding: 7px 20px
+    margin-bottom: 10px
+    border-radius: 5px
+    border-left: 15px solid #f05d22
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),-2px -2px 5px 0 rgba(0,0,0,.1),2px 2px 5px 0 rgba(0,0,0,.1),-2px 2px 5px 0 rgba(0,0,0,.1)
+    font-size: 1.2rem
+    text-align: left
+    letter-spacing: 2px
+  li:nth-child(1)
+    border-color: $seagull
+  li:nth-child(2)
+    border-color: $orange
+  li:nth-child(3)
+    border-color: $java
+  li:nth-child(4)
+    border-color: $seagull
+  li:nth-child(5)
+    border-color: $orange
+  li:nth-child(6)
+    border-color: $java
+  li:nth-child(1):hover
+    border-right: 7px solid $seagull
+  li:nth-child(2):hover
+    border-right: 7px solid $orange
+  li:nth-child(3):hover
+    border-right: 7px solid $java
+  li:nth-child(4):hover
+    border-right: 7px solid $seagull
+  li:nth-child(5):hover
+    border-right: 7px solid $orange
+  li:nth-child(6):hover
+    border-right: 7px solid $java
+
+.circle-img
+  width: 230px
+  height: 230px
+  border-radius: 50%
+  background: url("../img/testimonials-1.jpg") no-repeat center
+  background-size: contain
+  box-shadow: 0 0 80px 0 #9a9a97
+
+.footer-wrapper
+  padding: 70px 0 20px 0
+  background: linear-gradient(to top, #b6e3fd, #ffffff)
+  align-items: flex-start
+  justify-content: space-around
+.logo-footer-img
+  width: 50px
+  height: 50px
+.footer-items
+  font-size: 2rem
+
+@media screen and (max-width: 1290px)
+  .header-heading
+    font-size: 6rem
+  .main-description-wrapper
+    margin: 0 auto 50px
+    width: 50%
+  .project-promotion-list
+    li
+      font-size: 0.9rem
+
+@media screen and (max-width: 1200px)
+  .header-heading
+    font-size: 5rem
+  .main-heading-wrapper
+    width: 60%
+@media screen and (max-width: 1111px)
+  .logo-img
+    margin: 10px auto
+    width: 100px
+    height: 100px
+  .carousel-wrapper
+    width: 700px
+    .carousel
+      .carousel-inner
+        height: 400px
+@media screen and (max-width: 935px)
+  .header-heading
+    font-size: 3rem
+  .main-heading
+    font-size: 1.4rem
+@media screen and (max-width: 735px)
+  .carousel-wrapper
+    width: 400px
+    .carousel
+      .carousel-inner
+        height: 220px
+        border: 10px solid $orange
+@media screen and (max-width: 570px)
+  .main-description-wrapper
+    margin: 0 auto 50px
+    width: 95%
+    .main-heading
+      font-size: 1.5rem
+  .footer-wrapper
+    flex-direction: column
+    .nav-copyright-wrapper
+      margin: 0 auto
+      .footer-header
+        font-size: 1.5rem
+    .social-networks-icons
+      margin: 10px auto
+@media screen and (max-width: 490px)
+    .counter-wrapper
+      width: 250px
+      .counter
+        .text-counter
+          font-size: 2rem
+      .btn-charity
+        padding: 10px 10px
+    .carousel-wrapper
+      width: 260px
+      .carousel
+        .carousel-inner
+          height: 150px
+@media screen and (max-width: 400px)
+  .header-heading
+    font-size: 2.2rem
+  .main-heading-wrapper
+    width: 100%
