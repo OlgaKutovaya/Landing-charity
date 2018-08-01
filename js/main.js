@@ -12,3 +12,18 @@ if(btnClose) {
         modalPay.style.display = 'none';
     });
 }
+
+let btnLastContributions = document.getElementById("btnLastContributions");
+let modalLastCharity = document.getElementById("modalLastCharity");
+let btnCloseContributions = document.getElementById("btnCloseContributions");
+
+if(btnLastContributions) {
+    btnLastContributions.addEventListener('click', function() {
+        modalLastCharity.style.display = 'block';
+    });
+}
+if(btnCloseContributions) {
+    btnCloseContributions.addEventListener('click', function() {
+        modalLastCharity.style.display = 'none';
+    });
+}
